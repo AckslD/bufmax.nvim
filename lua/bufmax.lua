@@ -89,7 +89,6 @@ end
 M.setup = function(options)
   local keep_last = options.keep_last or 10
   local notify = options.notify
-  print('notify', notify)
   local group = vim.api.nvim_create_augroup('BufMax', {clear = true})
 
   vim.api.nvim_create_autocmd('BufEnter', {
